@@ -1,0 +1,17 @@
+---
+version: "2.1"
+services:
+  cplus-code-server:
+    image: cplusserver
+    container_name: cplus-code-server
+    environment:
+      - PUID=1000
+      - PGID=1000
+      - PASSWORD=password #optional
+      - SUDO_PASSWORD=password #optional
+      - PROXY_DOMAIN=code-server.my.domain #optional
+    volumes:
+      - /c/Users/admin/Documents/_docker/_cplus:/config/workspace
+    ports:
+      - 8443:8443
+    restart: unless-stopped

@@ -1,0 +1,10 @@
+version: "2.1"
+services:
+  python-code-server:
+    image: pythonserver
+    container_name: python-code-server
+    volumes:
+      - /c/Users/admin/Documents/_docker/_python:/config/workspace
+    ports:
+      - 8888:8888
+    restart: unless-stopped
