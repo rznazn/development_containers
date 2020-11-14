@@ -1,1 +1,4 @@
-**/workspace/*
+#ignore the code contained inside the workspaces to prevent potential posting of code to git hub
+**/workspace/**
+!**/workspace/helloworld/
+!**/workspace/helloworld/**
