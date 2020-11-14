@@ -4,7 +4,7 @@ services:
     image: pythonserver
     container_name: python-code-server
     volumes:
-      - /c/Users/admin/Documents/_docker/_python:/config/workspace
+      - /c/Users/admin/Documents/_docker/_python/workspace:/config/workspace
     ports:
       - 8888:8888
     restart: unless-stopped
