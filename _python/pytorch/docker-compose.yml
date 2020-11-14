@@ -1,0 +1,10 @@
+version: "2.1"
+services:
+  python-code-server:
+    image: pytorchserver
+    container_name: pytorch-code-server
+    volumes:
+      - ./workspace:/config/workspace
+    ports:
+      - 8888:8888
+    restart: unless-stopped
