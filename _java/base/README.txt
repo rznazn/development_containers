@@ -1,4 +1,4 @@
-use "docker build -t cplusserver ." to build the image and "docker-compose up" to run.
+use "docker build -t javaserver ." to build the image and "docker-compose up" to run.
 
 use your browser to open code server at localhost:8443
 
